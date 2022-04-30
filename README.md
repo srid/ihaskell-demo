@@ -1,4 +1,4 @@
-# haskell-template
+# ihaskell-demo
 
 Haskell project template optimized for a fully reproducible and friendly development environment. Based on:
 
@@ -33,8 +33,8 @@ git clone <your-clone-url>
 cd your-project
 NAME=myproject
 
-git mv haskell-template.cabal ${NAME}.cabal
-nix run nixpkgs#sd -- haskell-template ${NAME} * */*
+git mv ihaskell-demo.cabal ${NAME}.cabal
+nix run nixpkgs#sd -- ihaskell-demo ${NAME} * */*
 git add . && git commit -m rename
 ```
 

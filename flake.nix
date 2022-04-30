@@ -1,5 +1,5 @@
 {
-  description = "haskell-template's description";
+  description = "ihaskell-demo's description";
   inputs = {
     # To find a suitable nixpkgs hash, pick one from https://status.nixos.org/ (these are cached)
     nixpkgs.url = "github:nixos/nixpkgs/d9e593ed5889f3906dc72811c45bf684be8865cf";
@@ -44,7 +44,7 @@
           project = returnShellEnv:
             hp.developPackage {
               inherit returnShellEnv;
-              name = "haskell-template";
+              name = "ihaskell-demo";
               root = ./.;
               withHoogle = false;
               overrides = self: super: with pkgs.haskell.lib; {
@@ -83,7 +83,7 @@
           apps = {
             default = {
               type = "app";
-              program = "${inputs.self.packages.${system}.default}/bin/haskell-template";
+              program = "${inputs.self.packages.${system}.default}/bin/ihaskell-demo";
             };
             format = inputs.lint-utils.mkApp.${system} lintSpec;
           };

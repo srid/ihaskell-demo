@@ -39,6 +39,7 @@ executable ihaskell-demo
     , text
     , time
     , with-utf8
+    , ihaskell
 
   mixins:
     base hiding (Prelude),
